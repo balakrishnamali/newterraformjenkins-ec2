@@ -1,11 +1,10 @@
 pipeline {
-    agent  { label 'agent'
+    agent  { label 'agent' }
         stages {
-            stage {
+            stage ('Test Pipeline') {
                 steps {
                     sh 'echo "This is Jenkins Pipeline"'
                 }
             }
         }
-    }
 }
